@@ -11,7 +11,7 @@ import SwiftUI
 struct LessonOneSwiftUIExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PriceSlide()
         }
     }
 }

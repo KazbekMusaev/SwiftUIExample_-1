@@ -11,6 +11,8 @@
 		18CDC2E92B855D9500D7F3ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CDC2E82B855D9500D7F3ED /* ContentView.swift */; };
 		18CDC2EB2B855D9600D7F3ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CDC2EA2B855D9600D7F3ED /* Assets.xcassets */; };
 		18CDC2EE2B855D9600D7F3ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CDC2ED2B855D9600D7F3ED /* Preview Assets.xcassets */; };
+		18CDC2F82B85661D00D7F3ED /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 18CDC2F72B85661D00D7F3ED /* Pow */; };
+		18CDC2FA2B856AEE00D7F3ED /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CDC2F92B856AEE00D7F3ED /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		18CDC2E82B855D9500D7F3ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18CDC2EA2B855D9600D7F3ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CDC2ED2B855D9600D7F3ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18CDC2F92B856AEE00D7F3ED /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CDC2F82B85661D00D7F3ED /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				18CDC2E62B855D9500D7F3ED /* LessonOneSwiftUIExampleApp.swift */,
 				18CDC2E82B855D9500D7F3ED /* ContentView.swift */,
+				18CDC2F92B856AEE00D7F3ED /* Example.swift */,
 				18CDC2EA2B855D9600D7F3ED /* Assets.xcassets */,
 				18CDC2EC2B855D9600D7F3ED /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = LessonOneSwiftUIExample;
+			packageProductDependencies = (
+				18CDC2F72B85661D00D7F3ED /* Pow */,
+			);
 			productName = LessonOneSwiftUIExample;
 			productReference = 18CDC2E32B855D9500D7F3ED /* LessonOneSwiftUIExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 18CDC2DA2B855D9500D7F3ED;
+			packageReferences = (
+				18CDC2F62B85661D00D7F3ED /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = 18CDC2E42B855D9500D7F3ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				18CDC2E92B855D9500D7F3ED /* ContentView.swift in Sources */,
 				18CDC2E72B855D9500D7F3ED /* LessonOneSwiftUIExampleApp.swift in Sources */,
+				18CDC2FA2B856AEE00D7F3ED /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18CDC2F62B85661D00D7F3ED /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18CDC2F72B85661D00D7F3ED /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18CDC2F62B85661D00D7F3ED /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18CDC2DB2B855D9500D7F3ED /* Project object */;
 }
